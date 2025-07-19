@@ -1,0 +1,73 @@
+@font-face {
+    font-family: 'Tangerine';
+    src: url('../assets/fonts/Tangerine-Regular.woff2') format('woff2');
+    font-weight: normal;
+}
+@font-face {
+    font-family: 'Tangerine';
+    src: url('../assets/fonts/Tangerine-Bold.woff2') format('woff2');
+    font-weight: bold;
+}
+@font-face {
+    font-family: 'Inter';
+    src: url('../assets/fonts/Inter24pt-Regular.woff2') format('woff2');
+    font-weight: normal;
+}
+@font-face {
+    font-family: 'Inter';
+    src: url('../assets/fonts/Inter24pt-SemiBold.woff2') format('woff2');
+    font-weight: 600;
+}
+@font-face {
+    font-family: 'Inter';
+    src: url('../assets/fonts/Inter24pt-Bold.woff2') format('woff2');
+    font-weight: bold;
+}
+
+:root {
+    --font-title: 'Tangerine', serif;
+    --font-body: 'Inter', sans-serif;
+    --background-home-mobile: url('../assets/images/background-mobile.webp');
+    --background-home-tablet: url('../assets/images/background-tablet.webp');
+    --background-home-desktop: url('../assets/images/background-desktop.webp');
+    --background-home: var(--background-home-mobile);
+    --color-bg-about: #373831;
+    --color-text: #F0F0F0;
+    --font-size-title: 64px;
+    --font-size-nav: 16px;
+    --font-size-paragraph: 21px;
+    --font-size-signature: 36px;
+    --font-size-footer: 11px;
+    --paragraph-width: 394px;
+    --paragraph-line-height: 24px;
+    --paragraph-spacing: 32px;
+    --signature-width: 374px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    font-family: var(--font-body);
+    color: var(--color-text);
+}
+
+@media (min-width: 768px) {
+    :root {
+        --background-home: var(--background-home-tablet);
+    }
+}
+
+@media (min-width: 1440px) {
+    :root {
+        --background-home: var(--background-home-desktop);
+        --font-size-title: 96px;
+        --font-size-nav: 24px;
+        --font-size-footer: 12px;
+    }
+}
