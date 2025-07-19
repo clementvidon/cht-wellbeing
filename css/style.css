@@ -1,0 +1,39 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html, body {
+    height: 100%;
+    font-family: Arial, sans-serif;
+    color: white;
+    text-align: center;
+}
+body {
+    background: url('../images/background-desktop.jpg') no-repeat center center/cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.header {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+.header a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1rem;
+}
+.message {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 8px;
+    font-size: 2rem;
+}
+@media (max-width: 768px) {
+    body {
+        background: url('../images/background-mobile.jpg') no-repeat center center/cover;
+    }
+    .message {
+        font-size: 1.5rem;
+    }
+}
