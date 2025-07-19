@@ -33,15 +33,17 @@
     --background-home: var(--background-home-mobile);
     --color-bg-about: #373831;
     --color-text: #F0F0F0;
-    --font-size-title: 64px;
+    --font-size-title: 56px;
     --font-size-nav: 16px;
-    --font-size-paragraph: 21px;
+
+    --font-size-paragraph: 18px;
     --font-size-signature: 36px;
-    --font-size-footer: 11px;
     --paragraph-width: 394px;
-    --paragraph-line-height: 24px;
-    --paragraph-spacing: 32px;
     --signature-width: 374px;
+    --paragraph-line-height: 24px;
+    --paragraph-spacing: var(--font-size-paragraph);
+
+    --font-size-footer: 11px;
 }
 
 * {
@@ -60,6 +62,14 @@ html, body {
 @media (min-width: 768px) {
     :root {
         --background-home: var(--background-home-tablet);
+        --font-size-title: 64px;
+        --font-size-nav: 24px;
+
+        --font-size-paragraph: 20px;
+        --font-size-signature: 38px;
+
+        --font-size-footer: 12px;
+
     }
 }
 
@@ -68,6 +78,10 @@ html, body {
         --background-home: var(--background-home-desktop);
         --font-size-title: 96px;
         --font-size-nav: 24px;
+
+        --font-size-paragraph: 20px;
+        --font-size-signature: 38px;
+
         --font-size-footer: 12px;
     }
 }

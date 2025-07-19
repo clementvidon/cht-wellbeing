@@ -4,7 +4,8 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: var(--app-height);
+    min-height: 100dvh;
     position: relative;
 }
 
@@ -27,16 +28,23 @@ body {
 }
 
 .paragraph-container {
-    width: var(--paragraph-width);
+    width: 100%;
+    max-width: var(--paragraph-width);
+    padding: 0 10px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    box-sizing: border-box;
 }
 
 .signature-container {
-    width: var(--signature-width);
+    width: 100%;
+    max-width: var(--signature-width);
+    padding: 0 10px;
+    align-self: flex-start;
     text-align: right;
     margin-top: 0;
+    box-sizing: border-box;
 }
 
 .paragraph {
@@ -64,7 +72,7 @@ body {
 }
 
 .footer {
-    position: absolute;
+    position: fixed;
     bottom: 20px;
     width: 100%;
     text-align: center;
