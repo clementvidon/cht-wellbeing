@@ -16,6 +16,7 @@ body {
 
 .background {
     background: var(--background-home) no-repeat center center/cover;
+    background-color: var(--color-bg-about);
     position: absolute;
     top: 0; left: 0;
     width: 100%;

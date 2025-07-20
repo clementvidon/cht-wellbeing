@@ -34,9 +34,9 @@
     --font-size-signature: 36px;
     --font-size-footer: 11px;
 
-    --background-home-mobile: url('../assets/images/background-mobile.webp');
-    --background-home-tablet: url('../assets/images/background-tablet.webp');
-    --background-home-desktop: url('../assets/images/background-desktop.webp');
+    --background-home-mobile: url('../assets/images/background-mobile.webp'); /* 750 x 1344 */
+    --background-home-tablet: url('../assets/images/background-tablet.webp'); /* 1366 x 2048 */
+    --background-home-desktop: url('../assets/images/background-desktop.webp'); /* 2560 x 1440 */
     --background-home: var(--background-home-mobile);
 
     --color-bg-about: #373831;
