@@ -28,12 +28,13 @@
 }
 
 :root {
-    --font-heading: 'Tangerine', serif;
+    --app-height: 100vh;
+    --font-hero-heading: 'Tangerine', serif;
     --font-body: 'Inter', sans-serif;
 
-    --font-size-heading: 56px;
+    --font-size-hero-heading: clamp(56px, 5vw + 1rem, 96px);
     --font-size-nav: 16px;
-    --font-size-paragraph: 18px;
+    --font-size-paragraph: clamp(18px, 1.2vw + .5rem, 20px);
     --font-size-signature: 36px;
     --font-size-footer: 11px;
 
@@ -54,19 +55,6 @@
     --spacing-paragraph: var(--font-size-paragraph);
 }
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-html, body {
-    height: 100%;
-    width: 100%;
-    font-family: var(--font-body);
-    color: var(--color-text);
-}
-
 @keyframes fadeIn {
   from { opacity: 0; }
   to { opacity: 1; }
@@ -75,25 +63,17 @@ html, body {
 @media (min-width: 768px) {
     :root {
         --background-home: var(--background-home-tablet);
-        --font-size-heading: 80px;
         --font-size-nav: 18px;
-        --font-size-paragraph: 20px;
         --font-size-signature: 38px;
         --font-size-footer: 12px;
-
-        --spacing-paragraph: var(--font-size-paragraph);
     }
 }
 
 @media (min-width: 1440px) {
     :root {
         --background-home: var(--background-home-desktop);
-        --font-size-heading: 96px;
         --font-size-nav: 24px;
-        --font-size-paragraph: 20px;
         --font-size-signature: 38px;
         --font-size-footer: 12px;
-
-        --spacing-paragraph: var(--font-size-paragraph);
     }
 }
