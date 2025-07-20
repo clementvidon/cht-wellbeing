@@ -34,7 +34,7 @@
 
     --font-size-hero-heading: clamp(56px, 5vw + 1rem, 96px);
     --font-size-nav: 16px;
-    --font-size-paragraph: clamp(18px, 1.2vw + .5rem, 20px);
+    --font-size-paragraph: clamp(16px, 1.2vw + .5rem, 20px);
     --font-size-signature: 36px;
     --font-size-footer: 11px;
 
