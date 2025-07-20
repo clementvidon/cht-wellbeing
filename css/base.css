@@ -12,23 +12,26 @@
     font-family: 'Inter';
     src: url('../assets/fonts/Inter24pt-Regular.woff2') format('woff2');
     font-weight: normal;
+    font-display:swap;
 }
 @font-face {
     font-family: 'Inter';
     src: url('../assets/fonts/Inter24pt-SemiBold.woff2') format('woff2');
     font-weight: 600;
+    font-display:swap;
 }
 @font-face {
     font-family: 'Inter';
     src: url('../assets/fonts/Inter24pt-Bold.woff2') format('woff2');
     font-weight: bold;
+    font-display:swap;
 }
 
 :root {
-    --font-title: 'Tangerine', serif;
+    --font-heading: 'Tangerine', serif;
     --font-body: 'Inter', sans-serif;
 
-    --font-size-title: 56px;
+    --font-size-heading: 56px;
     --font-size-nav: 16px;
     --font-size-paragraph: 18px;
     --font-size-signature: 36px;
@@ -39,8 +42,8 @@
     --background-home-desktop: url('../assets/images/background-desktop.webp'); /* 2560 x 1440 */
     --background-home: var(--background-home-mobile);
 
-    --color-bg-about: #373831;
-    --color-text: #F0F0F0;
+    --color-bg: #373831;
+    --color-text: #E9E9E9;
     --color-highlight: #ffffff;
 
     --width-paragraph: 394px;
@@ -72,7 +75,7 @@ html, body {
 @media (min-width: 768px) {
     :root {
         --background-home: var(--background-home-tablet);
-        --font-size-title: 80px;
+        --font-size-heading: 80px;
         --font-size-nav: 18px;
         --font-size-paragraph: 20px;
         --font-size-signature: 38px;
@@ -85,7 +88,7 @@ html, body {
 @media (min-width: 1440px) {
     :root {
         --background-home: var(--background-home-desktop);
-        --font-size-title: 96px;
+        --font-size-heading: 96px;
         --font-size-nav: 24px;
         --font-size-paragraph: 20px;
         --font-size-signature: 38px;
